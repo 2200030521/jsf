@@ -1,0 +1,20 @@
+<html xmlns:h="http://xmlns.jcp.org/jsf/html">
+<body>
+
+<h1>Calculator</h1>
+<h:form>
+    Input A: <h:inputText value="#{clac.a}" type="text" />
+    <br/>
+    Input B: <h:inputText value="#{clac.b}" type="text" />
+    <br/>
+    Result = #{clac.c}
+    <br/>
+    <br/>
+
+    <h:commandButton action="#{clac.add()}" value="ADD" />
+    <h:commandButton action="#{clac.sub()}" value="SUB" />
+    <h:commandButton action="#{clac.mul()}" value="MUL" />
+</h:form>
+
+</body>
+</html>
